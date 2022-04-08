@@ -6,6 +6,7 @@ import AppHeader from "../AppHeader/AppHeader.vue";
 // 3.引入 底部组件
 import AppFooter from "../AppFooter/AppFooter.vue";
 
+import HeaderSticky from "../HeaderSticky/HeaderSticky.vue";
 // 从cateStore中导出 useCateStore方法
 import { useCateStore } from "../../stores/cateStore";
 // 通过调用useCateStore方法来获取cateStore实例
@@ -17,6 +18,7 @@ cateStore.initCategories();
 <template>
   <TopNav />
   <AppHeader />
+  <HeaderSticky />
   <!-- 插槽: 未来页面 不一样的地方就放在这里 -->
   <slot />
   <AppFooter />
